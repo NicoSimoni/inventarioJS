@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario Online</title>
+    <link href="https://bootswatch.com/5/lux/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div id="ctrPrincipal" class="container-fluid">
+            <a id="btnHome" class="navbar-brand" href="#">Inventario</a>
+            <form id="formBusqueda" class="d-flex">
+                <input id="inputBuscarNombre" class="form-control me-2" type="search" placeholder="Nombre" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Buscar</button>
+            </form>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ordenar lista
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a id="a-z" class="dropdown-item" href="#">A-Z</a></li>
+                  <li><a id="z-a" class="dropdown-item" href="#">Z-A</a></li>
+                  <li><a id="menorPrecio" class="dropdown-item" href="#">Menor Precio</a></li>
+                  <li><a id="mayorPrecio" class="dropdown-item" href="#">Mayor Precio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div id="divProductos"  class="row justify-content-center"></div>
+
+    
+    <form id="formAgregarProductos" action="" style="position: fixed; bottom: 20px; left: 40px;"><br>
+        <label id="lblMensaje"></label><br>
+        <input type="text" placeholder="Nombre" id="inputNombre">
+        <input type="text" placeholder="Precio" id="inputPrecio">
+        <input type="number" placeholder="Cant." id="inputStock" min="1" max="1000000">
+        <input type="text" placeholder="Categoria" list="items" id="inputCategoria" >
+            <!-- Lista de opciones -->
+            <datalist id="items">
+                <option>Tecnología</option>
+                <option>Moda</option>
+                <option>Deportes y fitness</option>
+                <option>Alimentos</option>
+                <option>Hogar</option>
+                <option>Otro</option>
+            </datalist>
+        <button type="submit" name="btnAgregarProductos">Agregar Producto</button>
+    </form>
+
+    <button id="btnPDF" type="button" class="btn btn-primary btn-sm" style="position: fixed; right: 30px; bottom: 20px;">Descargar PDF</button>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="inventario_online.js"></script>
+    
+</body>
+</html> 
