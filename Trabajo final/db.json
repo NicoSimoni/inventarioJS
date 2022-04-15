@@ -1,0 +1,44 @@
+[
+  {
+    "nombre": "Mouse Gamer",    
+    "precio": 1200,
+    "stock": 50,
+    "categoria": "Tecnología"
+  },
+  {
+    "nombre": "Teclado luminoso Gamer",    
+    "precio": 1050,
+    "stock": 25,
+    "categoria": "Tecnología"
+  },
+  {
+    "nombre": "Silla Gamer",    
+    "precio": 16000,
+    "stock": 10,
+    "categoria": "Hogar"
+  },
+  {
+    "nombre": "Funda Notebook Negra Lisa",
+    "precio": 329,
+    "stock": 40,
+    "categoria": "Moda"
+  },
+  {
+    "nombre": "Impresora Multifunción",
+    "precio": 5499,
+    "stock": 5,
+    "categoria": "Tecnología"
+  },
+  {
+    "nombre": "Webcam HD 720p",
+    "precio": 4799,
+    "stock": 12,
+    "categoria": "Tecnología"
+  },
+  {
+    "nombre": "Gamepad Joystick PC USB",
+    "precio": 829,
+    "stock": 3,
+    "categoria": "Tecnología"
+  }
+]
